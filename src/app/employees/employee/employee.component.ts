@@ -11,10 +11,10 @@ import { MatDialogRef} from '@angular/material';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor( private service:EmployeeService, 
-    private departmentService:DepartmentService,
-    private notificationService:NotificationService,
-    private dialogRef:MatDialogRef<EmployeeComponent> ) { }
+  constructor( public service:EmployeeService, 
+    public departmentService:DepartmentService,
+    public notificationService:NotificationService,
+    public dialogRef:MatDialogRef<EmployeeComponent> ) { }
 
  
   ngOnInit() {
